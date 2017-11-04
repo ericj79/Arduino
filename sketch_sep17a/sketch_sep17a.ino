@@ -13,7 +13,7 @@
 
 
 //RGB LED pins
-int ledDigitalOne[] = {4, 3, 2}; //the three digital pins of the digital LED 
+int ledDigitalOne[] = {10, 11, 9}; //the three digital pins of the digital LED 
                                    //10 = redPin, 11 = greenPin, 9 = bluePin
 
 const boolean ON = HIGH;     //Define on as LOW (this is because we use a common 
@@ -37,7 +37,6 @@ void setup(){
   for(int i = 0; i < 3; i++){
    pinMode(ledDigitalOne[i], OUTPUT);   //Set the three LED pins as outputs
   }
-  setColor(ledDigitalOne, BLUE);
 }
 
 void loop(){
@@ -45,12 +44,13 @@ void loop(){
 /* Example - 1 Set a color
    Set the three LEDs to any predefined color
 */
-   //setColor(ledDigitalOne, BLUE);    //Set the color of LED one
+   //setColor(ledDigitalOne, WHITE);    //Set the color of LED one
 
 /* Example - 2 Go through Random Colors
   Set the LEDs to a random color
 */
-   //randomColor();
+   randomColor();
+
 }
 
 void randomColor(){
