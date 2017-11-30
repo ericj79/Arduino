@@ -2,6 +2,21 @@
 // 250 should be a safe threshold
 
 
+/** 
+ * Using a Adafruit trinket wire up the following:
+ * 5V to '+' bar
+ * Pin # 1 (DIGITAL) to plus of buzzer (piezo buzzer)
+ * GND to '-' bar
+ * buzzer negative to '-' bar
+ * laser red wire to '+' bar
+ * laser blue wire to '-' bar
+ * One side of photoresister to '-' bar
+ * Other side of photoresister to a row on the bread board
+ * Pin #2 to same row of bread board
+ * 1k ohm resistor to same row of bread board
+ * other end of 1k ohm resister to '+' bar
+ */
+
 #define THRESHOLD  250  // THreshold to either set or break the trip wire
 
 #define SPEAKER    1    // Speaker connected to this DIGITAL pin #
